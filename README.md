@@ -3,6 +3,7 @@
 Welcome to the JavaPractice repository! This repository serves as my coding playground where I explore the world of Java programming. Here, you'll find a collection of code snippets, exercises, and small projects that I've worked on while learning Java.
 
 ## Table of Contents
+
 - [What's Inside](#whats-inside)
 - [Tools Used](#tools-used)
 - [Getting Started](#getting-started)
