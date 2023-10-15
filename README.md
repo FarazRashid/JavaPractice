@@ -4,6 +4,7 @@ Welcome to the JavaPractice repository! This repository serves as my coding play
 
 ## Table of Contents
 - [What's Inside](#whats-inside)
+- [Tools Used](#tools-used)
 - [Getting Started](#getting-started)
 - [Contributing](#contributing)
 - [License](#license)
@@ -14,6 +15,13 @@ Welcome to the JavaPractice repository! This repository serves as my coding play
 - **Exercises:** Java programming challenges and exercises to sharpen your skills.
 - **Projects:** Small-scale Java projects exploring various functionalities and applications.
 - **Learning Resources:** Links to tutorials, articles, and resources that have helped me in my Java learning journey.
+
+## Tools Used
+
+- **Java Development Kit (JDK):** [Download JDK](https://www.oracle.com/java/technologies/javase-jdk15-downloads.html)
+- **Integrated Development Environment (IDE):** [VSCode](https://code.visualstudio.com/) or [Eclipse](https://www.eclipse.org/ide/)
+- **Version Control:** [Git](https://git-scm.com/)
+- **GitHub:** [GitHub Repository](https://github.com/your-username/JavaPractice)
 
 ## Getting Started
 
