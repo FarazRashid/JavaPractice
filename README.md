@@ -36,7 +36,7 @@ If you want to explore the code or contribute to this repository, follow these s
 
 ## Contributing
 
-Your contributions are welcome! If you find a bug, have a suggestion, or want to add to the code or documentation, please [open an issue](https://github.com/your-username/JavaPractice/issues) or [create a pull request](https://github.com/your-username/JavaPractice/pulls).
+Your contributions are welcome! If you find a bug, have a suggestion, or want to add to the code or documentation, please [open an issue](https://github.com/FarazRashid/JavaPractice/issues) or [create a pull request](https://github.com/FarazRashid/JavaPractice/pulls).
 
 Please follow the [contribution guidelines](CONTRIBUTING.md) in this repository.
 
