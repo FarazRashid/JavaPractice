@@ -8,11 +8,16 @@ public class DatabaseConnect {
 
     public DatabaseConnect(String databaseType, String url, String username, String password) throws SQLException, ClassNotFoundException {
         String driverClassName;
-        if (databaseType.equals("SQL")) {
+        if (databaseType.equals("SQL")) 
+        {
             driverClassName = "com.mysql.jdbc.Driver";
-        } else if (databaseType.equals("Oracle")) {
+        } 
+        else if (databaseType.equals("Oracle")) 
+        {
             driverClassName = "oracle.jdbc.driver.OracleDriver";
-        } else {
+        } 
+        else 
+        {
             throw new IllegalArgumentException("Invalid database type: " + databaseType);
         }
 
@@ -26,17 +31,14 @@ public class DatabaseConnect {
     }
 
     public ResultSet executeQuery(String query) throws SQLException {
-        // Execute the query
         return stmt.executeQuery(query);
     }
 
     public int executeUpdate(String query) throws SQLException {
-        // Execute the update
         return stmt.executeUpdate(query);
     }
 
     public void close() throws SQLException {
-        // Close the connection
         conn.close();
     }
 
@@ -59,7 +61,8 @@ public class DatabaseConnect {
             DatabaseConnect db = new DatabaseConnect(databaseType, url, username, password);
 
             // Execute the query or update based on the query type
-            if (query.trim().toLowerCase().startsWith("select")) {
+            if (isSelectQuery(query)) 
+            {
                 ResultSet rs = db.executeQuery(query);
                 // Process the results
                 while (rs.next()) {
@@ -75,9 +78,15 @@ public class DatabaseConnect {
 
             // Close the connection
             db.close();
-        } catch (Exception e) {
+        } 
+        catch (Exception e) 
+        {
             System.err.println("Got an exception!");
             System.err.println(e.getMessage());
         }
+    }
+
+    private static boolean isSelectQuery(String query) {
+        return query.trim().toLowerCase().startsWith("select");
     }
 }
