@@ -4,11 +4,17 @@ This is a Java program that demonstrates how to connect to a MySQL database usin
 
 # Dependencies
 
-This program requires Java 8 or higher and the MySQL JDBC driver (mysql-connector-java.jar) to run
+This program requires Java 8 or higher and access to a MySQL or Oracle database.
+
+## Overview
+
+**DatabaseConnect** is a Java application that enables you to connect to different types of databases (MySQL and Oracle) and execute SQL queries or updates. It provides a simple command-line interface for interacting with databases.
 
 ## Usage
 
-To use this program, you need to have a MySQL database installed and running on your system. You also need to have the MySQL JDBC driver (mysql-connector-java.jar) in your classpath.
+To use this program, you need to have a MySQL database or Oracle database installed and running on your system. If you are using a MySQL database, you need to download the MySQL JDBC driver (mysql-connector-java.jar) and add it to your classpath.
+
+If you are using an Oracle database, you need to download the Oracle JDBC driver (ojdbc8.jar) and add it to your classpath.
 
 To connect to the database, you need to provide the following information:
 
@@ -18,12 +24,14 @@ To connect to the database, you need to provide the following information:
 - Username
 - Password
 
-You can provide this information in the `DatabaseConnect` class by modifying the following variables:
+You can provide this information in the `DatabaseConnect` class by following the prompts
 
-```java
-String url = "jdbc:mysql://localhost:3306/mydatabase";
-String username = "root";
-String password = "password";
+## Example Usage
+
+```Enter database type (SQL or Oracle): SQL
+Enter URL: jdbc:mysql://localhost:3306/mydatabase
+Enter username: myusername
+Enter password: mypassword
+Enter query: SELECT * FROM users;
+
 ```
-
-Once you have provided the correct information, you can run the main method in the DatabaseConnect class. This will connect to the database and execute a simple SQL query to retrieve some data from a table.
