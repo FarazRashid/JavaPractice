@@ -77,6 +77,7 @@ public class DatabaseConnect {
             }
 
             // Close the connection
+            scanner.close();
             db.close();
         } 
         catch (Exception e) 
@@ -84,6 +85,7 @@ public class DatabaseConnect {
             System.err.println("Got an exception!");
             System.err.println(e.getMessage());
         }
+
     }
 
     private static boolean isSelectQuery(String query) {

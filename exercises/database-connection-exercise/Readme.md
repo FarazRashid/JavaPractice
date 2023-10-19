@@ -2,7 +2,7 @@
 
 This is a Java program that demonstrates how to connect to a MySQL database using JDBC.
 
-# Dependencies
+## Dependencies
 
 This program requires Java 8 or higher and access to a MySQL or Oracle database.
 
